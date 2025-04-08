@@ -1,0 +1,37 @@
+.about {
+  padding: 60px 40px;
+  background-color: #ffffff;
+  color: #222;
+}
+
+.about h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0077ff;
+}
+
+.about p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  max-width: 800px;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.skills li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skills li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #0077ff;
+}
