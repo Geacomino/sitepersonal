@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bucurica Geacomino | Homepage</title>
+
+    <!--Roboto-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Roboto End-->
+
   <link rel="stylesheet" href="style/general.css">
   <link rel="stylesheet" href="style/header.css">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/despremine.css">
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/proiecte.css">
+  <link rel="stylesheet" href="style/font.css">
   
 </head>
 <body>
@@ -19,7 +27,7 @@
       <ul class="nav-links">
         <li><a href="#about">Despre</a></li>
         <li><a href="#projects">Proiecte</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="contactBtn">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -66,7 +74,7 @@
         
         <!-- Proiect 1 -->
         <div class="project-card">
-          <img src="img/bibliotecaAP.png" alt="Proiect 1">
+          <img src="img/bibliotecaAP.png" alt="Proiect Biblioteca AP">
           <h3>Biblioteca Albesti Paleologu</h3>
           <p>Un site in lucru pentru un proiect civic destinat comunitatii Albesti Paleologu, proiectat HTML, CSS și un strop de JavaScript.</p>
           <a href="https://www.biblioteca-ap.ro" target="_blank" class="btn">Vezi Proiectul</a>
@@ -74,17 +82,17 @@
   
         <!-- Proiect 2 -->
         <div class="project-card">
-          <img src="assets/proiect2.jpg" alt="Proiect 2">
-          <h3>To-Do App</h3>
-          <p>Aplicație web de organizare task-uri, folosind JavaScript vanilla și localStorage.</p>
-          <a href="https://www.biblioteca-ap.ro" target="_blank" class="btn">Vezi Proiectul</a>
+          <img src="img/workinprogress.jpg" alt="Proiect 2">
+          <h3>Site prezentare</h3>
+          <p>Work in Progress.</p>
+          <a href="#" target="_blank" class="btn">Vezi Proiectul</a>
         </div>
   
         <!-- Proiect 3 -->
         <div class="project-card">
-          <img src="assets/proiect3.jpg" alt="Proiect 3">
-          <h3>Portofoliu personal</h3>
-          <p>Un site responsive pentru prezentarea carierei și proiectelor, exact ca acesta!</p>
+          <img src="img/workinprogress.jpg" alt="Proiect 3">
+          <h3>Work in Progress</h3>
+          <p>Site prezentare</p>
           <a href="#" class="btn">Vezi Proiectul</a>
         </div>
   
@@ -94,13 +102,34 @@
 
 
   <footer>
-    <p>© 2025 Numele Tău. Toate drepturile rezervate.</p>
+    <p>© 2025 Bucurica Geacomino 	&#169;</p>
     <div class="socials">
       <a href="https://github.com/Geacomino" target="_blank">GitHub</a>
       <a href="https://www.linkedin.com/in/bucurica-geacomino-marian-8848881a2/" target="_blank">LinkedIn</a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal-content">
+      <span class="close-modal" id="closeModal">&times;</span>
+      <h2>Contactează-mă</h2>
+      <form action="https://formspree.io/f/xkgjkzpd" method="POST">
+        <label for="nume">Nume:</label>
+        <input type="text" name="nume" id="nume" required>
+      
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+      
+        <label for="mesaj">Mesaj:</label>
+        <textarea name="mesaj" id="mesaj" required></textarea>
+      
+        <button type="submit">Trimite</button>
+
+      </form>
+      
+    </div>
+  </div>
+
+  <script src="JS/script.js"></script>
 </body>
 </html>
